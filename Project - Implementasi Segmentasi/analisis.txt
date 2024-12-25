@@ -1,0 +1,12 @@
+1.Original Image:
+Gambar asli menunjukkan sebuah pemandangan gunung bersalju dengan beberapa pendaki.
+Gambar ini menjadi dasar untuk proses edge detection.
+
+2.Sobel Edge Detection:
+Sobel edge detection adalah teknik deteksi tepi yang menghitung gradien intensitas piksel dalam arah horizontal dan vertikal.
+Pada hasil ini, Sobel mencoba menonjolkan batas-batas tepi pada gambar seperti kontur gunung dan pendaki.
+Namun, hasilnya terlihat cukup "bising," mungkin karena tidak ada filtering atau smoothing sebelum penerapan Sobel, sehingga banyak detail kecil ikut terdeteksi sebagai tepi.
+
+3.Thresholded Image:
+Setelah deteksi tepi menggunakan Sobel, hasilnya diberi threshold untuk memisahkan tepi yang signifikan (putih) dari area non-tepi (hitam).
+Hasil threshold menunjukkan area tepi yang lebih jelas, tetapi tetap terdapat banyak noise. Ini mengindikasikan bahwa parameter threshold yang digunakan mungkin kurang optimal atau bahwa noise dari Sobel sebelumnya belum ditangani dengan baik.
